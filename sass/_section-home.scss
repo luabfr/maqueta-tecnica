@@ -1,0 +1,35 @@
+.section-home{
+	background-image: url("../img/fnd-1.jpg") ;
+  background-position: center;
+  background-size: cover;			
+
+  .row{
+  	display: flex;
+		align-items: center;
+  }
+}
+
+
+
+
+.large-text__misc {
+	width: 70%;
+	height: 8px;
+	background: $pri-color-1;
+	margin: 0 auto;
+}
+h1.large-text{
+	font-family: MuseoSans900, sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	margin: 3rem 0;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+	h1.large-text{
+		font-size: 4rem;
+	}
+}

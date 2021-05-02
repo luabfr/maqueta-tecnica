@@ -1,0 +1,200 @@
+body{
+	color: $pri-color-1;
+	background: $sec-color-1;
+}
+
+main{
+	max-width: 100vw;
+	//overflow: hidden;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100vw;
+	nav{
+		padding-top: 1rem;
+		
+
+
+		// 1
+		.burger__container{
+			//margin-left: 30px;
+			button{
+				display: flex;
+				align-items: center;
+				background: white;
+				margin: 0;
+				border: none;
+				padding: 0;
+			}
+		}
+
+		.burger__button{
+			background: white !important;
+			height: 40px;
+			width: 40px;
+			border: none;
+			display: flex;
+	    align-content: space-around;
+	    padding: 0 10px;
+	    flex-direction: column;
+	    padding-top: 12px;
+
+		}
+		.burger__line{
+			display: inline-block;
+			height: 2px;
+			width: 20px;
+			background: $pri-color-1; 
+			margin-bottom: 5px;
+		}
+		.burger__menu{
+			border: none;
+			border-radius: 0;
+		}
+
+		.burger-md-label{
+			padding-right: 1rem;
+			font-family: LatoLight;
+			font-size: 2rem;
+			line-height: 1;
+			margin-top: -.5rem;
+		}
+
+		ul{
+			margin-top: 20px;
+			padding: 0 !important;
+			max-width: 50%;
+			overflow: hidden;
+			position: absolute !important;
+			li{
+				list-style-type: none !important;
+				line-height: 3rem;
+				min-width: 200px;
+				padding-left: 20px;
+				&:hover{
+					background:  $link-hover-color;
+					color: inherit;
+				};
+				a{
+					font-size: 1.4rem;
+					font-family: Lato, sans-serif;
+					text-decoration: none;
+					color: inherit;
+					&:hover{
+						color: $pri-color-1;
+					}
+
+				}
+			}
+		}
+
+		// 2
+		#logo__container{
+			//position: absolute;
+			//top: 70px;
+			//width: 100%;
+			text-align: center;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: end;
+			img{
+				max-width: 50%;
+			}
+		}
+
+
+	}
+
+	
+}
+
+section{
+	position: relative;
+}
+
+.display-vh{
+	min-height: 100vh;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+h2.section-title{
+	background: white;
+	color: $pri-color-1;
+	font-family: LatoBlack, sans-serif;
+	position: absolute;
+	z-index: 200;
+	top: .75rem;
+	left: .75rem;
+	padding: .5rem 1rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+	nav{
+		// 3
+		.contact-button__container{
+	    justify-content: flex-end;
+	    display: flex;
+	    padding-right: 1.5rem;
+	    height: 40px;
+	  }
+		#contact-button{
+	    height: 40px;
+	    display: flex !important;
+	    align-items: center;
+			text-align: right;
+			background: white;
+			padding: 0 1rem;
+			font-family: LatoLight;
+			font-size: 2rem;
+			line-height: 1;
+			
+			
+			a{
+				text-decoration: none;				
+				color: $pri-color-1;
+				margin-top: -.5rem;
+			}	
+
+			.contacto-circle__container{
+				display: inline-flex;
+				align-items: center;
+			}
+			.contacto-circle{
+				display: inline-block;
+				border: 1px solid $pri-color-1;
+				width: 16px;
+				height: 16px;
+				border-radius: 8px;
+				&.left{
+					margin-right: -8px;
+				}
+			}
+
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+// Tools
+.px-0{
+	padding-left: 0;
+	padding-right: 0;
+}

@@ -1,0 +1,40 @@
+
+/* Colores
+**********************************/
+$pri-color-1: #443d5b; // Violeta
+$pri-color-dark: #302a40; // Violeta Dark
+$sec-color-1: #e2e2e4; // Crema
+$sec-color-2: #eae6eb;
+
+$link-hover-color: #f4f2f5;
+
+
+
+/* Tipografias
+*********************************/
+@font-face {
+  font-family: MuseoSans900;
+  src: url(../fonts/MuseoSans_900.otf) ;
+}
+@font-face {
+  font-family: MuseoSans100;
+  src: url(../fonts/MuseoSans_100.otf) ;
+}
+@font-face {
+  font-family: MuseoSans500;
+  src: url(../fonts/MuseoSans_500.otf) ;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf) ;
+}
+@font-face {
+  font-family: LatoLight;
+  src: url(../fonts/Lato-Light.ttf) ;
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url(../fonts/Lato-Black.ttf) ;
+}

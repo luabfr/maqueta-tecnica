@@ -1,0 +1,155 @@
+
+.owl-carousel {
+	//position: relative;
+	//height: 100%;
+	//width: 100vw;
+	height: 100vh;
+}
+
+.owl-wrapper-outer {
+    height: 100% !important;    	
+}
+
+.owl-wrapper {
+     height: 100%;   
+}
+
+.owl-item {
+    height: 100%;
+}
+.owl-nav{
+	display: block !important; 
+}
+.owl-nav button{
+	position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+	background: white !important;
+	
+
+	&.owl-prev{
+		left: .75rem;
+	}
+	//--
+	&.owl-next{
+		right: .75rem;
+	}
+	img{
+		margin:  10px;
+	}
+}
+
+
+
+
+.slider__item{
+	min-height: 100vh;
+	background-position: top;
+	background-size: cover;
+	cursor: pointer;
+}
+.slider__item-1{
+	background-image: url(../img/slider-1.jpg);	
+}
+.slider__item-2{
+	background-image: url(../img/slider-2.jpg);	
+}
+.slider__item-3{
+	background-image: url(../img/slider-3.jpg);	
+}
+.slider__item-description {
+	background-color: white;
+	color: $pri-color-1;
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
+  //width: 100%;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: LatoLight, sans-serif;
+  line-height: 1.2;
+  transition: all .5s;
+  h2{
+  	font-size: 2rem;
+  	font-family: LatoBlack, sans-serif;
+  
+  }
+}
+
+
+
+// MODAL
+.modal-backdrop {
+	background-color: white;
+	opacity: .5;
+}
+
+.modal-dialog{
+	box-shadow: 10px 0 50px #00000080;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.modal-content{
+	border: 0;
+	border-radius: 1rem;
+}
+.modal-body{
+	padding:  0 !important;
+	display: flex ;
+}
+.btn-close{
+	color	: $pri-color-1;
+}
+.modal__close{
+	position: absolute;
+	right: .75rem;
+	top: .75rem;
+	z-index: 20000;
+}
+
+.owl-carousel__slider{
+	height: 90vh;
+	overflow: hidden;
+} 
+
+
+.modal__project-description{
+	padding: 3rem;
+	h2{
+		font-family: LatoBlack, sans-serif;
+		font-size: 2rem;
+	}
+	p{
+		font-family: LatoLight, sans-serif;
+		font-size: 1.4rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.slider__item-description {
+		opacity: 0;
+		margin: 0 !important;
+		width: 100%;
+	}
+	// Solo muestra el bloque
+	// Falta el media-querie para qu funcione solo en Desktop
+	.active ~ .active:not(.active ~ .active ~ .active) {
+	  .slider__item-description {
+		  opacity: 1 !important;
+		}
+	}
+
+	.modal-dialog{
+		max-width: 90vw !important;
+		max-height: 90vh !important;
+	}
+
+	.modal__project-slider{
+		width: 70%;
+	}
+	.modal__project-description{
+		width: 30%;	
+	}
+
+
+}
