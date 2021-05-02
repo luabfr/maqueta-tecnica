@@ -1,5 +1,5 @@
 
-.owl-carousel {
+#slider-projects.owl-carousel {
 	//position: relative;
 	//height: 100%;
 	//width: 100vw;
@@ -95,7 +95,6 @@
 }
 .modal-body{
 	padding:  0 !important;
-	display: flex ;
 }
 .btn-close{
 	color	: $pri-color-1;
@@ -108,10 +107,19 @@
 }
 
 .owl-carousel__slider{
-	height: 90vh;
+	//height: 90vh;
 	overflow: hidden;
 } 
 
+
+
+
+.modal__project-slider{
+	width: 100%;
+}
+.modal__project-description{
+	width: 100%;	
+}
 
 .modal__project-description{
 	padding: 3rem;
@@ -126,6 +134,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+	.owl-carousel__slider{
+		height: 90vh;
+		overflow: hidden;
+	} 
 	.slider__item-description {
 		opacity: 0;
 		margin: 0 !important;
@@ -142,6 +154,9 @@
 	.modal-dialog{
 		max-width: 90vw !important;
 		max-height: 90vh !important;
+	}
+	.modal-body{
+		display: flex ;
 	}
 
 	.modal__project-slider{
